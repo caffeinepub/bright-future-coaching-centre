@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ─── Bricolage Grotesque (Display) ─── */
-@font-face {
-  font-family: "Bricolage Grotesque";
-  src: url("/assets/fonts/BricolageGrotesque-Variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* ─── Plus Jakarta Sans (Body) ─── */
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("/assets/fonts/PlusJakartaSans-Variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
 @layer base {
   :root {
     --radius: 0.75rem;
@@ -96,14 +78,13 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-feature-settings: "ss01", "ss02";
+    font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
   }
@@ -111,11 +92,11 @@
 
 @layer utilities {
   .font-display {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   .font-body {
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   .text-blue-deep {

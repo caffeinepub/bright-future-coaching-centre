@@ -200,7 +200,7 @@ function SectionHeader({
   return (
     <div className="text-center mb-10 md:mb-14">
       {badge && (
-        <Badge className="mb-3 bg-brand-blue-100 text-brand-blue-700 border-0 font-semibold text-xs tracking-wide uppercase px-3 py-1">
+        <Badge className="mb-3 bg-brand-blue-100 text-brand-blue-700 border-0 font-semibold text-xs px-3 py-1">
           {badge}
         </Badge>
       )}
@@ -269,7 +269,7 @@ function Hero() {
             transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-brand-blue-900 leading-[1.1] mb-6"
           >
-            Expert Tuition for{" "}
+            Expert Tuition For{" "}
             <span
               className="relative inline-block"
               style={{ color: "oklch(0.45 0.18 255)" }}
@@ -380,7 +380,7 @@ function About() {
           {/* Text column */}
           <FadeUp>
             <div>
-              <Badge className="mb-4 bg-brand-blue-100 text-brand-blue-700 border-0 font-semibold text-xs tracking-wide uppercase px-3 py-1">
+              <Badge className="mb-4 bg-brand-blue-100 text-brand-blue-700 border-0 font-semibold text-xs px-3 py-1">
                 About Us
               </Badge>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-brand-blue-900 mb-6 leading-tight">
@@ -713,7 +713,7 @@ function Commitment() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
-            <Badge className="mb-4 bg-brand-blue-200 text-brand-blue-800 border-0 font-semibold text-xs tracking-wide uppercase px-3 py-1">
+            <Badge className="mb-4 bg-brand-blue-200 text-brand-blue-800 border-0 font-semibold text-xs px-3 py-1">
               Our Promise
             </Badge>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-brand-blue-900 mb-6">
@@ -828,7 +828,7 @@ function Contact() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-brand-blue-700 text-brand-blue-100 border-brand-blue-600 font-semibold text-xs tracking-wide uppercase px-3 py-1">
+            <Badge className="mb-4 bg-brand-blue-700 text-brand-blue-100 border-brand-blue-600 font-semibold text-xs px-3 py-1">
               Contact
             </Badge>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
@@ -848,7 +848,7 @@ function Contact() {
                   <MapPin size={18} className="text-brand-blue-200" />
                 </div>
                 <div>
-                  <p className="text-brand-blue-300 text-xs font-semibold uppercase tracking-wide mb-1">
+                  <p className="text-brand-blue-300 text-xs font-semibold mb-1">
                     Location
                   </p>
                   <p className="text-white font-medium">Dibrugarh, Assam</p>
@@ -860,7 +860,7 @@ function Contact() {
                   <Phone size={18} className="text-brand-blue-200" />
                 </div>
                 <div>
-                  <p className="text-brand-blue-300 text-xs font-semibold uppercase tracking-wide mb-1">
+                  <p className="text-brand-blue-300 text-xs font-semibold mb-1">
                     Phone
                   </p>
                   <a
@@ -877,7 +877,7 @@ function Contact() {
                   <Mail size={18} className="text-brand-blue-200" />
                 </div>
                 <div>
-                  <p className="text-brand-blue-300 text-xs font-semibold uppercase tracking-wide mb-1">
+                  <p className="text-brand-blue-300 text-xs font-semibold mb-1">
                     Email
                   </p>
                   <a
@@ -957,13 +957,23 @@ function Footer() {
           This is a demo website created for portfolio purposes only.
         </p>
 
-        <p className="text-brand-blue-600 text-xs">
-          Built with ❤️ using{" "}
+        <p className="text-brand-blue-950 text-xs">
+          Built with{" "}
+          <span
+            style={{
+              color: "inherit",
+              filter: "grayscale(1) brightness(0) invert(0)",
+              opacity: 0,
+            }}
+          >
+            ❤️
+          </span>{" "}
+          using{" "}
           <a
             href={caffeineUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brand-blue-400 hover:text-brand-blue-300 transition-colors underline underline-offset-2"
+            className="text-brand-blue-950 transition-colors"
           >
             caffeine.ai
           </a>
